@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        'use strict';
+        var Modul = {};
+
+        //Scope mit function(){} Erzeugen und mit 'return' und Objektliteral öffentliche Member nach Aussen bringen
+        Modul = (function () {
+            var x = 0;
+            var str2 = "";
+            var str = "Guten Morgen, Herr Dr. Jung! :)<br />Möchte Ihnen noch dieses Programm Zeigen, mit dem ich orginelle Grüsse Verschicken kann!<br />Bis heute Nachmittag.<br />Liebe Grüsse Nicolas Sauter : &nbsp;&nbsp;)";
+            var arr = str.split("");
+            //Aaaachtung nach return muss { kommen!!!    
+            return {
+                aufruf: function () {
+                    setTimeout('Modul.aufruf2()', 2000);
+                },//Komma und : für Literalschreibweise 
+
+                aufruf2: function () {
+                    //Ausstiegs Bedingung aus function
+                    if (!(x < arr.length))
+                        return;
+
+                    str2 += arr[x];
+                    document.getElementById('pe').innerHTML = str2;
+                    x++;
+                    //Hier Selbstaufruf, so SchleifenWirkung
+                    window.setTimeout('Modul.aufruf2()', 100);
+                }
+            }//Ende return
+        })();
+        window.onload = Modul.aufruf();
+    </script>
+</head>
+
+<body>
+    <h1 id="pe" style="font-size:100px;"></h1>
+</body>
+
+</html>
