@@ -4,8 +4,4 @@ Kleines einfaches Text animations Programm mit JavaScript
 
 ## Vorschau
 
-z.B. auf:
-
-https://htmlpreview.github.io/
-
-- Dort die URL des `.html` Files Eingeben.
+[Ausführen](http://htmlpreview.github.io/?https://github.com/sauternic/JavaScript_TypingTextAnimation/blob/master/TypingTextAnimation.html)
