@@ -2,4 +2,4 @@
 
 Kleines einfaches Text animations Programm mit JavaScript
 
-# [Show](http://htmlpreview.github.io/?https://github.com/sauternic/JavaScript_TypingTextAnimation/blob/master/TypingTextAnimation.html)
+# [Show](https://sauternic.github.io/JavaScript_TypingTextAnimation/)
